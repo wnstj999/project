@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>기업형 데이터 대시보드</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="dashboard">
 
@@ -22,7 +24,7 @@
 
     <!-- 콘텐츠 영역 -->
     <div class="content-area">
-      
+
       <!-- 상단 헤더 -->
       <header class="header">
         <h1>상단 대시보드</h1>
@@ -34,7 +36,29 @@
 
       <!-- 메인 -->
       <main class="main">
-        
+
+        <main class="main">
+          <!-- KPI 카드 (Day 2) -->
+          <section class="kpi">
+            <!-- 카드들 (생략) -->
+          </section>
+
+          <!-- Day 3: 매출 추이 차트 -->
+          <section class="charts">
+            <h2>매출 추이</h2>
+            <canvas id="salesChart"></canvas>
+          </section>
+
+          <!-- 이후 표 영역 -->
+          <section class="placeholder">
+            <p>여기에 표가 추가될 예정입니다.</p>
+          </section>
+        </main>
+
+        <script type="module" src="js/chart-line.js"></script>
+        <script type="module" src="js/app.js"></script>
+
+
         <!-- Day 2: KPI 카드 -->
         <section class="kpi">
           <div class="card" id="card-sales">
@@ -44,3 +68,4 @@
           </div>
 
           <div cla
+          
